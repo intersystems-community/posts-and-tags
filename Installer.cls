@@ -10,6 +10,7 @@ XData setup
     <Import File="${SourceDir}" Flags="ck" Recurse="1"/>
   </Namespace>
   <RunInstall Class="App.Installer" Method="DefaultNS"/>
+  <Invoke Class="App.Installer" Method="BuildIndex" CheckStatus="1"/>
 </Manifest>
 }
 
@@ -29,6 +30,13 @@ ClassMethod DefaultNS(pVars, pLogLevel, tInstaller) As %Status
 	}
 	Do tInstaller.PopNS()
 	Quit tSC
+}
+
+ClassMethod BuildIndex() As %Status
+{
+  Zn "PYTHON"
+  Set tSC = ##class(Community.Post).%BuildIndices()
+  Quit tSC
 }
 
 }

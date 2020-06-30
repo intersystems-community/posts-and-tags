@@ -9,7 +9,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 Clone/git pull the repo into any local directory
 
 ```
-$ git clone https://github.com/intersystems-community/PythonGateway-Template.git
+$ git clone https://github.com/intersystems-community/posts-and-tags.git
 ```
 
 Open the terminal in this directory and run:
@@ -73,6 +73,22 @@ http://localhost:52773/csp/user/index.html
 ```
 
 Where `52773` is a container web port. 
+
+### Community Posts Dataset
+
+#### SQL Query Examples
+Get Posts   
+``` sql
+SELECT * FROM Community.Post
+```
+Get Tags
+``` sql
+SELECT * FROM Community.Tag
+```
+Get Posts by Tag **REST API**
+``` sql
+SELECT * FROM Community.Post WHERE $LISTFIND($LISTFROMSTRING(Tags, ','), 'REST API') != 0
+```
 
 ## DevOps
 

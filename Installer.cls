@@ -36,6 +36,7 @@ ClassMethod BuildIndex() As %Status
 {
   Zn "PYTHON"
   Set tSC = ##class(Community.Post).%BuildIndices()
+  Set tSC = ##class(Community.Tags).%BuildIndices()
   Quit tSC
 }
 

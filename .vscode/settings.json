@@ -12,6 +12,7 @@
           "internalPort": 52773
         }, 
         "links": {
+          "WebTerminal": "http://localhost:${port}/terminal/",
           "MLToolkit Demos": "http://localhost:${port}/csp/user/index.html"
         }
       }

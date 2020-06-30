@@ -1,4 +1,4 @@
-Class Community.Tags Extends %Persistent
+Class Community.Tag Extends %Persistent
 {
 
 Property Name As %String(MAXLEN = "");
@@ -9,7 +9,7 @@ Property Description As %String(MAXLEN = "");
 
 Storage Default
 {
-<Data name="TagsDefaultData">
+<Data name="TagDefaultData">
 <Value name="1">
 <Value>%%CLASSNAME</Value>
 </Value>
@@ -20,11 +20,11 @@ Storage Default
 <Value>Description</Value>
 </Value>
 </Data>
-<DataLocation>^Community.TagsD</DataLocation>
+<DataLocation>^Community.TagD</DataLocation>
 <DefaultData>TagsDefaultData</DefaultData>
-<IdLocation>^Community.TagsD</IdLocation>
-<IndexLocation>^Community.TagsI</IndexLocation>
-<StreamLocation>^Community.TagsS</StreamLocation>
+<IdLocation>^Community.TagD</IdLocation>
+<IndexLocation>^Community.TagI</IndexLocation>
+<StreamLocation>^Community.TagS</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 

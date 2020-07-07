@@ -1,5 +1,5 @@
 # Developer Community posts and tags
-This is a template for InterSystems AI contest with data on Posts and Tags exported from [InterSystems Developer Community](community.intersystems.com)
+This is a repository for InterSystems AI contest with data on Posts and Tags exported from [InterSystems Developer Community](community.intersystems.com)
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
@@ -85,7 +85,8 @@ Get Tags
 ``` sql
 SELECT * FROM Community.Tag
 ```
-Get Posts by Tag **REST API**
+#### Get Posts for the tag Tag
+E.g. here all the posts with tag 'RERST API'
 ``` sql
 SELECT * FROM Community.Post WHERE $LISTFIND($LISTFROMSTRING(Tags, ','), 'REST API') != 0
 ```

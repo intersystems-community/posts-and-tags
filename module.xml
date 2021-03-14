@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="objectscript-sample.ZPM">
+  <Document name="posts-and-tags.ZPM">
     <Module>
-      <Name>objectscript-sample</Name>
-      <Version>0.0.1</Version>
+      <Name>posts-and-tags</Name>
+      <Version>0.0.2</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="PackageSample.PKG"/>
+       <Resource Name="community.PKG" Directory="cls"/>
+		<Resource Name="community.comment.GBL" Directory="gbl"/>
+		<Resource Name="community.post.GBL" Directory="gbl"/>
+		<Resource Name="Community.tag.GBL" Directory="gbl"/>
     </Module>
   </Document>
 </Export>

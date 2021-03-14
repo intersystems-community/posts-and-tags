@@ -3,7 +3,8 @@
   <Document name="posts-and-tags.ZPM">
     <Module>
       <Name>posts-and-tags</Name>
-      <Version>0.0.2</Version>
+      <Version>0.0.3</Version>
+	<Description>Developer Community posts and tags</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
        <Resource Name="community.PKG" Directory="cls"/>

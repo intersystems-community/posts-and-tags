@@ -8,6 +8,8 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.PKG" Directory="cls"/>
+      <Resource Name="Community.TagD.GBL"/>
+
 		  <Invokes>
         <Invoke Class="community.deploy" Method="run">
         </Invoke>

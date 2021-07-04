@@ -6,7 +6,7 @@ ClassMethod run(NameSpace) As %Status
 {
     w "Loading data from GitHub", !
     Set sc = $$$OK
-    set $namespace = NameSpace
+    If $g(NameSpace)'="" set $namespace = NameSpace
 
     set owner = "intersystems-community"
     set repo = "posts-and-tags"

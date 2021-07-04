@@ -4,7 +4,7 @@ Class community.deploy
 
 ClassMethod run(NameSpace) As %Status
 {
-    w "Loading data from GitHub", !
+    w !, "Loading data from GitHub", !
     Set sc = $$$OK
     If $g(NameSpace)'="" set $namespace = NameSpace
 

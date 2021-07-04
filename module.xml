@@ -3,14 +3,12 @@
   <Document name="posts-and-tags.ZPM">
     <Module>
       <Name>posts-and-tags</Name>
-      <Version>0.0.3</Version>
-	<Description>Developer Community posts and tags</Description>
+      <Version>0.1.0</Version>
+	    <Description>Developer Community posts and tags</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="community.PKG" Directory="cls"/>
-		<Resource Name="community.comment.GBL" Directory="gbl"/>
-		<Resource Name="community.post.GBL" Directory="gbl"/>
-		<Resource Name="Community.tag.GBL" Directory="gbl"/>
+      <Resource Name="community.PKG" Directory="cls"/>
+		  <Resource Name="Community.tag.GBL" Directory="gbl"/>
     </Module>
   </Document>
 </Export>

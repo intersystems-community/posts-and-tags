@@ -1,8 +1,7 @@
 ARG IMAGE=store/intersystems/iris-community:2020.1.0.204.0
 ARG IMAGE=intersystemsdc/iris-community:2020.1.0.209.0-zpm
 ARG IMAGE=intersystemsdc/iris-community:2020.2.0.196.0-zpm
-ARG IMAGE=intersystemscommunity/mlte:latest
-ARG IMAGE=intersystemscommunity/mlte:aa
+ARG IMAGE=intersystemsdc/iris-ml-community
 FROM $IMAGE
 
 USER root
@@ -21,7 +20,6 @@ SHELL ["/irissession.sh"]
 RUN \
   do $SYSTEM.OBJ.Load("Installer.cls", "ck") \
   set sc = ##class(App.Installer).setup() \
-  zn "PYTHON" \
   zpm "install webterminal"
 
 # bringing the standard shell back

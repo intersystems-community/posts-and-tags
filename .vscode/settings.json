@@ -1,21 +1,17 @@
 {
-    
-    "objectscript": {
-      "conn": {
+    "objectscript.conn": {
         "https": false,
-        "ns": "PYTHON",
+        "ns": "IRISAPP",
         "active": true,
         "username": "_SYSTEM",
         "password": "SYS",
         "docker-compose": {
-          "service": "iris",
-          "internalPort": 52773
-        }, 
+            "service": "iris",
+            "internalPort": 52773
+        },
         "links": {
-          "WebTerminal": "http://localhost:${port}/terminal/",
-          "MLToolkit Demos": "http://localhost:${port}/csp/user/index.html"
+            "WebTerminal": "http://localhost:${port}/terminal/"
         }
-      }
     }
 
 }

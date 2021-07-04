@@ -2,11 +2,11 @@
 Class community.deploy
 {
 
-ClassMethod Run(NameSpace) As %Status
+ClassMethod run(NameSpace) As %Status
 {
     w "Loading data from GitHub", !
     Set sc = $$$OK
-    set $namespace = ""
+    set $namespace = NameSpace
 
     set owner = "intersystems-community"
     set repo = "posts-and-tags"

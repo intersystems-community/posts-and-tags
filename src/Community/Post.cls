@@ -128,6 +128,9 @@ Storage Default
 <Value name="25">
 <Value>Translated</Value>
 </Value>
+<Value name="26">
+<Value>CommentsAmount</Value>
+</Value>
 </Data>
 <DataLocation>^Community.PostD</DataLocation>
 <DefaultData>PostDefaultData</DefaultData>

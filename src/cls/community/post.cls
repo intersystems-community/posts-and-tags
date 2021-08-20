@@ -31,7 +31,7 @@ Property Text As %String(MAXLEN = "");
 
 Property Author As %String;
 
-Property CommentsAmount As %Integer;
+Property CommentsAmount As %Integer [ Calculated, SqlComputeCode = { set {*} = ##class(community.post).GetCommentsAmount({Id})}, SqlComputed ];
 
 Property PostType As %String(VALUELIST = ",Question,Article,Announcement,Digest,Discussion");
 
@@ -49,6 +49,15 @@ Property AcceptedAnswerTS As %TimeStamp;
 Property Lang As %String;
 
 Property Translated As %Boolean;
+
+ClassMethod GetCommentsAmount(id) As %Integer
+{
+	set result = 0
+	set sql = "Select Count(Id) As CommentsAmount From community.comment Where Post = ? "
+	set rs = ##class(%SQL.Statement).%ExecDirect(,sql, id)
+	if rs.%Next() {set result = rs.CommentsAmount}
+	Quit result
+}
 
 Storage Default
 {

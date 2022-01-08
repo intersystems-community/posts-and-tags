@@ -1,6 +1,9 @@
 # Developer Community posts and tags
 This is a repository for InterSystems AI contest with data on Posts and Tags exported from [InterSystems Developer Community](community.intersystems.com)
 
+## License
+This database of InterSystems Developer Community posts and tags is made available under the Public Domain Dedication and License v1.0 whose full text can be found at: http://opendatacommons.org/licenses/pddl/1.0/
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
